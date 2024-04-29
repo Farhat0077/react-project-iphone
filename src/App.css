@@ -28,6 +28,7 @@ body {
 
 .logo img {
   width: 150px;
+  
 }
 
 .menu {
@@ -88,7 +89,10 @@ body {
 .btn:hover {
   background-color: #555;
   color: white;
-}
+      box-shadow: 0 0 5px rgb(35, 35, 35),
+      0 0 25px rgb(47, 47, 47) , 0 0 50px rgb(36, 36, 36),
+      0 0 100px rgb(39, 38, 38) , 0 0 200px rgb(42, 41, 41);
+  }
 
 .hero-image img {
   max-width: 700px;
@@ -96,10 +100,6 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-}
-
-.hero-image img:hover {
-  transform: scale(1.05);
 }
 
 .features {
@@ -123,8 +123,12 @@ body {
   transition: transform 0.3s ease;
 }
 
-.feature img:hover {
+.feature img:hover,
+.hero-image img:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 5px rgb(89, 89, 89),
+  0 0 25px rgba(86, 86, 86, 0.8) , 0 0 50px rgba(87, 87, 87, 0.8),
+  0 0 100px rgb(55, 54, 54) , 0 0 200px rgb(93, 93, 93)
 }
 
 .feature-description {
